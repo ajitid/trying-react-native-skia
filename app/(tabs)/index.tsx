@@ -1,13 +1,10 @@
 import { StyleSheet } from 'react-native'
-
 import { Canvas, Circle } from '@shopify/react-native-skia'
 
+import Breathe from '@/components/Breathe'
+
 export default function HomeScreen() {
-  return (
-    <Canvas style={{ flex: 1 }}>
-      <Circle c={{ x: 100, y: 100 }} r={30} color="lightgreen" />
-    </Canvas>
-  )
+  return <Breathe />
 }
 
 /*
