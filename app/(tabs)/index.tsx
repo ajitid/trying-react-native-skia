@@ -12,7 +12,9 @@ probably can be uses as a wrapper:
 <ThemedView style={styles.optionallySomeStyle}>
   <Canvas>...
 </ThemedView>
-I noticed that adding ThemedView changes black background to something else. I think to do a vvvv Clear, I'd need to give a background color to Canvas
+I noticed that adding ThemedView changes black background to something else. I think to do a vvvv Clear, 
+I'd need to mark Canvas as `opaque` and then optionally set a background color.
+For some reason, while listed https://shopify.github.io/react-native-skia/docs/canvas/overview, opaque property isn't available to me
 */
 
 const styles = StyleSheet.create({
